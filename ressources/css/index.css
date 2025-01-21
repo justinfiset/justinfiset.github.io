@@ -3,6 +3,8 @@ body {
 
     font-size: 1.5em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    line-height: 1.3em;
 }
 
 nav {
@@ -122,16 +124,18 @@ em {
     margin: 1em;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+}
+
+.project * {
+    margin: 0.5em;
 }
 
 .project-title {
+    margin: 0;
     font-weight: bolder;
     text-decoration-line: underline;
     text-decoration-thickness: 5px;
-}
-
-.project-title + * {
-    margin: 0;
 }
 
 .project-preview {
@@ -139,6 +143,19 @@ em {
     width: 90%;
     border: 2px solid #457B9D;
     border-radius: 5px;
+}
+
+#navbar-toggle {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar-toggle * {
+    margin: 1em 1.2em 0 0;
+    display: none;
+    height: 3rem;
 }
 
 #home-portrait {
@@ -152,6 +169,10 @@ em {
 #home-portrait:hover {
     transform: scale(0.95);
     border-color: #457B9D;
+}
+
+.no-decoration {
+    text-decoration: none;
 }
 
 @media (max-width: 1200px) {
@@ -177,5 +198,9 @@ em {
     #home {
         align-self: center;
         width: 90%;
+    }
+
+    #navbar-toggle * {
+        display: inline-block;
     }
 }
