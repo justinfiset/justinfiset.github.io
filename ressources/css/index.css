@@ -43,7 +43,7 @@ nav {
 
 #navbar-logo {
     height: 2em;
-    transition-duration: 700ms;
+    transition-duration: 400ms;
     border-radius: 999px;
     padding: 0.5em;
 }
@@ -60,8 +60,12 @@ main {
 }
 
 #home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     align-self: center;
     width: 60%;
+    margin-top: 2em;
 }
 
 .button {
@@ -135,6 +139,19 @@ em {
     width: 90%;
     border: 2px solid #457B9D;
     border-radius: 5px;
+}
+
+#home-portrait {
+    border-radius: 9999px;
+    height: 20rem;
+    object-fit: cover;
+    border: #1D3557 solid 4px;
+    transition-duration: 150ms;
+}
+
+#home-portrait:hover {
+    transform: scale(0.95);
+    border-color: #457B9D;
 }
 
 @media (max-width: 1200px) {
