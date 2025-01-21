@@ -1,0 +1,164 @@
+body {
+    background-color: #F1FAEE;
+
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: #457B9D;
+    color: #eee;
+    width: 100vw;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    height: 2em;
+    list-style: none;
+    margin: 0;
+    padding: 1em 2em 1em 2em;
+}
+
+#navbar li {
+    margin-left: 2em;
+    display: inline-block;
+}
+
+#navbar li:last-child {
+    margin-left: auto;
+}
+
+#navbar-contact {
+    background-color: #1D3557;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 15px;
+}
+
+#navbar-contact:hover {
+    background-color: #F1FAEE;
+    color: #1D3557;
+    border: 2px solid #1D3557;
+}
+
+#navbar-logo {
+    height: 2em;
+    transition-duration: 700ms;
+    border-radius: 999px;
+    padding: 0.5em;
+}
+
+#navbar-logo:hover {
+    background-color: #1D3557;
+    transform: scale(1.1);
+    rotate: 360deg;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#home {
+    align-self: center;
+    width: 60%;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    transition-duration: 100ms; 
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 15px;
+}
+
+.button:hover {
+    font-size: larger;
+    color: #F1FAEE;
+    background-color: #1D3557;
+}
+
+em {
+    color: #A8DADC;
+    font-weight: bold;
+}
+
+#presentation {
+    padding: 1em;
+    background-color: #1D3557;
+    color : #F1FAEE;
+    border-radius: 15px;
+    transition-duration: 150ms;
+}
+
+#presentation:hover {
+    background-color: #457B9D;
+}
+
+#projects {
+    background-color: #A8DADC;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    color: #1D3557;
+    padding-bottom: 2em;
+}
+
+#projects h2 {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.project {
+    background-color: #F1FAEE;
+    width: 20em;
+    border-radius: 15px;
+    border: 2px solid #457B9D;
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    font-weight: bolder;
+    text-decoration-line: underline;
+    text-decoration-thickness: 5px;
+}
+
+.project-title + * {
+    margin: 0;
+}
+
+.project-preview {
+    margin: 0.5em auto auto auto;
+    width: 90%;
+    border: 2px solid #457B9D;
+    border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+
+    #navbar * {
+        margin-top: 1.5em;
+    }
+
+    #navbar li:last-child {
+        margin-right: auto;
+    }
+
+    #navbar li {
+        margin-left: 0;
+        display: inline-block;
+    }
+
+    #home {
+        align-self: center;
+        width: 90%;
+    }
+}
