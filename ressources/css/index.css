@@ -181,6 +181,24 @@ em {
     align-items: center;
     background-color: #457B9D;
     color: #F1FAEE;
+    width: 100%;
+}
+
+.history-card {
+    display: flex;
+    background-color: #F1FAEE;
+    padding: 0.5em;
+    width: 80%;
+    color: #1D3557;
+    border-radius: 15px;
+    border: 2px solid #1D3557;
+    margin-top: 1.5em;
+}
+
+.history-card img {
+    width: 6em;
+    margin-right: 1em;
+    border-radius: 5px
 }
 
 @media (max-width: 1200px) {
@@ -210,5 +228,9 @@ em {
 
     #navbar-toggle * {
         display: inline-block;
+    }
+
+    .history-card {
+        flex-direction: column;
     }
 }
