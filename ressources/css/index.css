@@ -175,6 +175,14 @@ em {
     text-decoration: none;
 }
 
+#history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #457B9D;
+    color: #F1FAEE;
+}
+
 @media (max-width: 1200px) {
     #navbar {
         flex-direction: column;
