@@ -14,7 +14,13 @@ header {
 }
 
 footer {
-    background-color: #457B9D;
+    background-color: #1D3557;
+    display: flex;
+    justify-content: center;
+    color: #F1FAEE;
+    align-items: center;
+    height: 3em;
+    font-size: 0.7em;
 }
 
 nav {
@@ -194,6 +200,7 @@ em {
     background-color: #457B9D;
     color: #F1FAEE;
     width: 100%;
+    padding-bottom: 2em;
 }
 
 .history-card {
