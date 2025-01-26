@@ -7,6 +7,10 @@ body {
     line-height: 1.3em;
 }
 
+* {
+    transition-duration: 100ms;
+}
+
 header {
     position: sticky;
     top: 0;
@@ -89,7 +93,6 @@ main {
 .button {
     text-decoration: none;
     color: white;
-    transition-duration: 100ms; 
     padding: 0.5em 1em 0.5em 1em;
     border-radius: 15px;
 }
@@ -110,7 +113,6 @@ em {
     background-color: #1D3557;
     color : #F1FAEE;
     border-radius: 15px;
-    transition-duration: 150ms;
 }
 
 #presentation:hover {
@@ -147,6 +149,11 @@ em {
     margin: 0.5em;
 }
 
+.project:hover {
+    background-color: #e1f0f2;
+    scale: 1.05;
+}
+
 .project-title {
     margin: 0;
     font-weight: bolder;
@@ -181,7 +188,6 @@ em {
     height: 20rem;
     object-fit: cover;
     border: #1D3557 solid 4px;
-    transition-duration: 150ms;
 }
 
 #home-portrait:hover {
@@ -218,6 +224,44 @@ em {
     width: 6em;
     margin-right: 1em;
     border-radius: 5px
+}
+
+.history-card:hover {
+    transform: scale(1.02);
+    background-color: #e1f0f2;
+}
+
+#contact {
+    color: #1D3557;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #A8DADC;
+}
+
+#socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.social-card {
+    background-color: #F1FAEE;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 15px;
+    border: 2px solid #1D3557;
+}
+
+.social-card:hover {
+    transform: scale(1.05);
+    background-color: #e1f0f2;
+}
+
+.social-card > img {
+    max-width: 2.5em;
 }
 
 @media (max-width: 1200px) {
