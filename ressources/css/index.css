@@ -34,7 +34,6 @@ nav {
 }
 
 #navbar {
-    display: flex;
     align-items: center;
     height: 2em;
     list-style: none;
@@ -90,14 +89,14 @@ main {
     margin-top: 2em;
 }
 
-.button {
+.nav-button {
     text-decoration: none;
     color: white;
     padding: 0.5em 1em 0.5em 1em;
     border-radius: 15px;
 }
 
-.button:hover {
+.nav-button:hover {
     font-size: larger;
     color: #F1FAEE;
     background-color: #1D3557;
@@ -264,12 +263,19 @@ em {
     max-width: 2.5em;
 }
 
+.flexbox {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
 @media (max-width: 1200px) {
     #navbar {
         flex-direction: column;
         align-items: center;
-        height: 0;
-        display: none;
+        height: fit-content;
     }
 
     #navbar * {

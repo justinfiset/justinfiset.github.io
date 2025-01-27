@@ -6,18 +6,21 @@
     <meta content="width=device-width, initial-scale=1 minimum-scale=1, user-scalable=no"" name="viewport" />
     <link rel="stylesheet" href="./ressources/css/normalize.css">
     <link rel="stylesheet" href="./ressources/css/index.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="module" src="./ressources/js/index.js" defer></script> 
 </head>
 
 <body>
     <header>
         <nav>
             <div id="navbar-toggle"><img src="./ressources/images/icons/light/menu_256.png"></div>
-            <ul id="navbar">
-                <li><a class="button" href="#contact" id="navbar-contact"><strong>Me contacter</strong></a></li>
-                <li><a class="button" href="#home">Acceuil</a></li>
-                <li><a class="button" href="#projects">Mes projets</a></li>
-                <li><a class="button" href="#history">Mon parcours</a></li>
-                <li><a class="button" href="#about">À propos de moi</a></li>
+            <ul id="navbar" class="flexbox">
+                <li><a class="nav-button" href="#contact" id="navbar-contact"><strong>Me contacter</strong></a></li>
+                <li><a class="nav-button" href="#home">Acceuil</a></li>
+                <li><a class="nav-button" href="#projects">Mes projets</a></li>
+                <li><a class="nav-button" href="#history">Mon parcours</a></li>
+                <li><a class="nav-button" href="#about">À propos de moi</a></li>
                 <li><a href="#contact"><img id="navbar-logo" src="./ressources/images/logo.png" alt="logo"></a></li>
             </ul>
         </nav>
