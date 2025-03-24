@@ -8,6 +8,7 @@ body {
 }
 
 * {
+    box-sizing: border-box;
     transition-duration: 100ms;
 }
 
@@ -122,15 +123,11 @@ em {
     background-color: #A8DADC;
     color: #1D3557;
     padding-bottom: 2em;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-#projects-container {
-    width: 50%;
-    column-count: 2;
+    align-items: center;;
 }
 
 #projects h2 {
@@ -138,14 +135,17 @@ em {
     text-align: center;
 }
 
+#projects-container {
+    margin: 0 auto;
+    width: 50%;
+}
+
 .project {
-    width: 90%;
     background-color: #F1FAEE;
     border-radius: 15px;
     border: 2px solid #457B9D;
-    padding: 1em;
-    display: inline-block;
-    margin-top: 1em
+    width: calc(50% - 10px); /* Ajuste pour un gutter de 10px */
+    margin-bottom: 10px;
 }
 
 .project-inner {
@@ -283,9 +283,11 @@ em {
 
 @media (max-width: 1200px) {
     #projects-container {
-        width: 90%;
-        column-count: 1;
-        column-gap:0;
+        width: 80%;
+    }
+
+    .project {
+        width: 100%;
     }
 
     #navbar {

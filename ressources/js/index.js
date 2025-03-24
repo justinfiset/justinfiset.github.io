@@ -1,5 +1,21 @@
 $(document).ready(function() {
     onResize();
+
+    var $grid = $(".masonry").masonry({
+        itemSelector: ".masonry-item",
+        columnWidth: ".masonry-item",
+        percentPosition: true,
+        horizontalOrder: true,
+        gutter: 10
+    });
+
+    $grid.imagesLoaded().progress( function() {
+        $grid.masonry('layout');
+    });
+
+    $(window).resize(function() {
+        $grid.masonry('layout');
+    });
 });
 
 $(window).resize(onResize);
