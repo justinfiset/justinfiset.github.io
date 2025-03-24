@@ -120,11 +120,17 @@ em {
 
 #projects {
     background-color: #A8DADC;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
     color: #1D3557;
     padding-bottom: 2em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects-container {
+    width: 50%;
+    column-count: 2;
 }
 
 #projects h2 {
@@ -133,12 +139,16 @@ em {
 }
 
 .project {
+    width: 90%;
     background-color: #F1FAEE;
-    width: 20em;
     border-radius: 15px;
     border: 2px solid #457B9D;
     padding: 1em;
-    margin: 1em;
+    display: inline-block;
+    margin-top: 1em
+}
+
+.project-inner {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -150,7 +160,7 @@ em {
 
 .project:hover {
     background-color: #e1f0f2;
-    scale: 1.05;
+    transform: scale(1.02);
 }
 
 .project-title {
@@ -272,6 +282,12 @@ em {
 }
 
 @media (max-width: 1200px) {
+    #projects-container {
+        width: 90%;
+        column-count: 1;
+        column-gap:0;
+    }
+
     #navbar {
         flex-direction: column;
         align-items: center;
