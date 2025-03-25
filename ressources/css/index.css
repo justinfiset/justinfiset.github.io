@@ -286,6 +286,10 @@ em {
 }
 
 @media (max-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+
     #projects-container {
         width: 80%;
     }
