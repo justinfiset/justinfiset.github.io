@@ -1,7 +1,7 @@
 body {
     background-color: #F1FAEE;
 
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     line-height: 1.3em;
@@ -146,6 +146,10 @@ em {
     width: calc(50% - 10px); /* Ajuste pour un gutter de 10px */
     margin-bottom: 10px;
     box-sizing: border-box;
+}
+
+.project-wide {
+    width: 100%;
 }
 
 .project-inner {
