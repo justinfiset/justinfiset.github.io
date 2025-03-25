@@ -290,6 +290,11 @@ em {
         width: 80%;
     }
 
+    .social-card {
+        padding: 0.4em;
+        margin: 0.4em;
+    }
+
     .project {
         width: 100%;
     }
