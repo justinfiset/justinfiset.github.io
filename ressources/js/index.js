@@ -12,7 +12,7 @@ $(document).ready(function() {
         });
     });
 
-    onResize();
+    onResize(); 
 });
 
 $(window).resize(onResize);
