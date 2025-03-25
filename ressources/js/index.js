@@ -1,9 +1,7 @@
+let $grid;
+
 $(document).ready(function() {
-    onResize();
-
-
-    var $grid = $('.masonry');
-
+    $grid = $('.masonry');
     $grid.imagesLoaded().done(function() {
         $grid.masonry({
             itemSelector: ".masonry-item",
@@ -14,14 +12,14 @@ $(document).ready(function() {
         });
     });
 
-    $(window).resize(function() {
-        $grid.masonry('layout');
-    });
+    onResize();
 });
 
 $(window).resize(onResize);
 
 function onResize() {
+    $grid.masonry('layout');
+
     if ($(window).width() < 1200) {
         $("#navbar").addClass("hidden");
     } else {
