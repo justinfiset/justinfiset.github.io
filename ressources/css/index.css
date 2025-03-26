@@ -5,6 +5,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     line-height: 1.3em;
+
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
 }
 
 * {
@@ -15,6 +20,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    width: 100%;
 }
 
 #about {
@@ -31,8 +37,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
-    padding: 2em;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
 }
 
 .about-card {
@@ -70,7 +76,7 @@ footer {
 nav {
     background-color: #457B9D;
     color: #eee;
-    width: 100vw;
+    width: 100%;
 }
 
 #navbar {
@@ -150,7 +156,7 @@ em {
 #presentation {
     padding: 1em;
     background-color: #1D3557;
-    color : #F1FAEE;
+    color: #F1FAEE;
     border-radius: 15px;
 }
 
@@ -166,7 +172,8 @@ em {
 
     display: flex;
     flex-direction: column;
-    align-items: center;;
+    align-items: center;
+    ;
 }
 
 #projects h2 {
@@ -187,7 +194,8 @@ em {
     background-color: #F1FAEE;
     border-radius: 15px;
     border: 2px solid #457B9D;
-    width: calc(50% - 10px); /* Ajuste pour un gutter de 10px */
+    width: calc(50% - 10px);
+    /* Ajuste pour un gutter de 10px */
     box-sizing: border-box;
 }
 
@@ -317,7 +325,7 @@ em {
     background-color: #e1f0f2;
 }
 
-.social-card > img {
+.social-card>img {
     max-width: 2.5em;
 }
 
