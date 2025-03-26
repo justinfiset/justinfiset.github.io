@@ -27,6 +27,36 @@ header {
     text-align: center;
 }
 
+#about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 2em;
+}
+
+.about-card {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 0.5em;
+    color: #1D3557;
+    background-color: #F1FAEE;
+    border-radius: 15px;
+    border: 2px solid #457B9D;
+    box-sizing: border-box;
+    width: 20%;
+}
+
+.about-card:hover {
+    background-color: #e1f0f2;
+    transform: scale(1.02);
+}
+
+.about-card ul {
+    font-weight: 500;
+    text-align: left;
+}
+
 footer {
     background-color: #1D3557;
     display: flex;
