@@ -34,6 +34,7 @@ header {
 }
 
 #about-container {
+    margin-top: 1em;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -41,21 +42,26 @@ header {
     padding-bottom: 2em;
 }
 
+.about-card h3 {
+    font-weight: bolder;
+}
+
 .about-card {
     margin-left: 1em;
     margin-right: 1em;
-    padding: 0.5em;
+    padding: 1em;
     color: #1D3557;
     background-color: #F1FAEE;
     border-radius: 15px;
     border: 2px solid #457B9D;
     box-sizing: border-box;
-    width: 20%;
+    width: 25%;
 }
 
 .about-card:hover {
     background-color: #e1f0f2;
     transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .about-card ul {
@@ -77,6 +83,10 @@ nav {
     background-color: #457B9D;
     color: #eee;
     width: 100%;
+}
+
+.material-icons {
+    vertical-align: middle;
 }
 
 #navbar {
@@ -106,6 +116,7 @@ nav {
     background-color: #F1FAEE;
     color: #1D3557;
     border: 2px solid #1D3557;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #navbar-logo {
@@ -119,6 +130,7 @@ nav {
     background-color: #1D3557;
     transform: scale(1.1);
     rotate: 360deg;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 main {
@@ -146,6 +158,7 @@ main {
     font-size: larger;
     color: #F1FAEE;
     background-color: #1D3557;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 em {
@@ -162,6 +175,7 @@ em {
 
 #presentation:hover {
     background-color: #457B9D;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #projects {
@@ -216,6 +230,7 @@ em {
 .project:hover {
     background-color: #e1f0f2;
     transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .project-title {
@@ -257,6 +272,7 @@ em {
 #home-portrait:hover {
     transform: scale(0.95);
     border-color: #457B9D;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .no-decoration {
@@ -293,6 +309,7 @@ em {
 .history-card:hover {
     transform: scale(1.02);
     background-color: #e1f0f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #contact {
@@ -323,6 +340,7 @@ em {
 .social-card:hover {
     transform: scale(1.05);
     background-color: #e1f0f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .social-card>img {
@@ -337,6 +355,21 @@ em {
     display: none;
 }
 
+a {
+    color: inherit;
+}
+
+.external-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.inline-icon {
+    height: 1em;
+    vertical-align: middle;
+}
+
 @media (max-width: 1200px) {
     body {
         font-size: 18px;
@@ -349,11 +382,16 @@ em {
 
     .about-card {
         margin-bottom: 1em;
-        width: 80%;
+        width: 90%;
+    }
+
+    .about-card ul {
+        margin: 0 0.5em 0 0.8em;
+        padding: 0;
     }
 
     #projects-container {
-        width: 80%;
+        width: 90%;
     }
 
     .social-card {
