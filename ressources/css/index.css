@@ -197,7 +197,7 @@ em {
 
 #projects-container {
     margin: 0 auto;
-    width: 50%;
+    width: 70%;
 }
 
 .masonry-item {
@@ -208,7 +208,7 @@ em {
     background-color: #F1FAEE;
     border-radius: 15px;
     border: 2px solid #457B9D;
-    width: calc(50% - 10px);
+    width: calc(33% - 10px);
     /* Ajuste pour un gutter de 10px */
     box-sizing: border-box;
 }
