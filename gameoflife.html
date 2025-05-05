@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Life</title>
+    <link rel="stylesheet" href="/ressources/gameoflife/css/normalize.css">
+    <link rel="stylesheet" href="/ressources/gameoflife/css/game.css">
+    <script src="/ressources/gameoflife/js/game.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav></nav>
+        <div id="mobile-warning">
+            <h1>Warning</h1>
+            <p>This game is not optimized for mobile devices. Please use a computer for the best experience.</p>
+        </div>
+    </header>
+    <main>
+        <div class="game-container">
+            <h1>Conway's Game of Life</h1>
+            <div id="canvas-wrapper">
+                <canvas id="game-canvas" width="500" height="500"></canvas>
+            </div>
+            <p id="play-button">Start</p>
+            <div id="rules">
+                <h2>Rules of Conway's Game of Life</h2>
+                <p>
+                    <strong>Conway's Game of Life</strong> is a cellular automaton devised by British mathematician John
+                    Horton Conway in 1970. It is a zero-player game, meaning its evolution is determined by its initial
+                    state with no further input.
+                </p>
+                <h3>Basic Rules:</h3>
+                <ul>
+                    <li>Any live cell with fewer than two live neighbors dies (underpopulation).</li>
+                    <li>Any live cell with two or three live neighbors lives on to the next generation.</li>
+                    <li>Any live cell with more than three live neighbors dies (overpopulation).</li>
+                    <li>Any dead cell with exactly three live neighbors becomes a live cell (reproduction).</li>
+                </ul>
+                <p>
+                    These simple rules can lead to incredibly complex and unpredictable patterns.
+                </p>
+                <p>
+                    Source: <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank"
+                        rel="noopener noreferrer">Conway's Game of Life – Wikipedia</a>
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4>By Justin Fiset</h4>
+    </footer>
+</body>
+
+</html>

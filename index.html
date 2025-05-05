@@ -7,6 +7,13 @@
     <meta charset="UTF-8">
     <meta name="description"
         content="Portfolio de Justin Fiset, étudiant en génie logiciel à l'École de technologie supérieure. Découvrez mes projets, mon parcours et comment me contacter.">
+
+    <meta property="og:title" content="Justin Fiset | Portfolio">
+    <meta property="og:description"
+        content="Étudiant en génie logiciel à l'ÉTS. Découvrez mes projets et mon parcours.">
+    <meta property="og:image" content="./ressources/images/justin.jpg">
+    <meta property="og:type" content="website">
+
     <link rel="stylesheet" href="./ressources/css/normalize.css">
     <link rel="stylesheet" href="./ressources/css/index.css">
 
@@ -17,6 +24,8 @@
     <script src="./ressources/js/index.js" defer></script>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" href="./ressources/images/logo.png">
 </head>
 
 <body>
@@ -25,7 +34,7 @@
             <div id="navbar-toggle"><img src="./ressources/images/icons/light/menu_256.png" alt="menu_icon"></div>
             <ul id="navbar" class="flexbox">
                 <li><a class="nav-button" href="#contact" id="navbar-contact"><strong>Me contacter</strong></a></li>
-                <li><a class="nav-button" href="#home">Acceuil</a></li>
+                <li><a class="nav-button" href="#home">Accueil</a></li>
                 <li><a class="nav-button" href="#projects">Mes projets</a></li>
                 <li><a class="nav-button" href="#history">Mon parcours</a></li>
                 <li><a class="nav-button" href="#about">À propos de moi</a></li>
@@ -56,7 +65,7 @@
             <div id="projects-container" class="masonry">
                 <div class="project masonry-item">
                     <div class="project-inner">
-                        <img class="project-preview" src="./ressources/images/projects/studlar.gif" alt="amplogix">
+                        <img class="project-preview" src="./ressources/images/projects/studlar.gif" alt="Studlar">
                         <p><span class="project-title">Studlar</span></p>
                         <p>
                             Studlar est une application de gestion de projets et de tâches, développée pour aider les
@@ -72,7 +81,8 @@
                 </div>
                 <div class="project masonry-item">
                     <div class="project-inner">
-                        <img class="project-preview" src="./ressources/images/projects/elevate.PNG" alt="amplogix">
+                        <img class="project-preview" src="./ressources/images/projects/elevate.PNG"
+                            alt="Elevate Engine">
                         <p><span class="project-title">Elevate Engine</span> (&#8987;)</p>
                         <p>
                             Moteur de jeu 2D en développement, basé sur GLFW et OpenGL. Conçu pour offrir une
@@ -89,7 +99,7 @@
                 </div>
                 <div class="project masonry-item">
                     <div class="project-inner">
-                        <img class="project-preview" src="./ressources/images/projects/bsp.gif" alt="amplogix">
+                        <img class="project-preview" src="./ressources/images/projects/bsp.gif" alt="bsp">
                         <p><span class="project-title">Bash Space Program</span></p>
                         <p>
                             Bash Space Program est un jeu de survie sous haute tension inspiré de Keep Talking and
@@ -123,6 +133,24 @@
                 </div>
                 <div class="project masonry-item">
                     <div class="project-inner">
+                        <img class="project-preview" src="./ressources/images/projects/conway.gif" alt="Game of life">
+                        <p><span class="project-title">Conway's Game of Life</span></p>
+                        <p>
+                            Implémentation interactive du célèbre "Jeu de la vie" de Conway. Cette simulation illustre
+                            les principes d'émergence à partir de règles simples appliquées à une grille de cellules.
+                            Codé en JavaScript, le projet permet de tester différents motifs et configurations
+                            directement dans le navigateur.
+                        </p>
+                        <a href="/gameoflife.html" target="_blank" class="external-link">
+                            <p class="no-decoration">
+                                <span class="material-icons">play_arrow</span>
+                            </p>
+                            <strong>Jouer dans votre navigateur</strong>
+                        </a>
+                    </div>
+                </div>
+                <div class="project masonry-item">
+                    <div class="project-inner">
                         <img class="project-preview" src="./ressources/images/projects/intranet_valin.gif" alt="valin">
                         <p><span class="project-title">Intranet Valin Confection</span></p>
                         <p>
@@ -134,7 +162,7 @@
                 </div>
                 <div class="project masonry-item">
                     <div class="project-inner">
-                        <img class="project-preview" src="./ressources/images/projects/tourisme.gif " alt="amplogix">
+                        <img class="project-preview" src="./ressources/images/projects/tourisme.gif " alt="tourisme">
                         <p><span class="project-title">Application d'agence de tourisme</span></p>
                         <p>
                             Application Android résalisé en Java dans le cadre d'un projet de fin de session.

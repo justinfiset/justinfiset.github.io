@@ -357,12 +357,21 @@ em {
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 .external-link {
     display: inline-flex;
     align-items: center;
     text-decoration: underline;
+}
+
+.external-link p {
+    margin: 0;
+}
+
+.external-link p span {
+    margin: 0;
 }
 
 .inline-icon {
