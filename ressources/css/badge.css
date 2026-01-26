@@ -1,0 +1,38 @@
+.badge-container {
+    all: reset;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.badge {
+    padding: 0.4em 0.5em;
+    border-radius: 0.3em;
+    font-size: 0.75em;
+    font-weight: bold;
+    box-shadow: #1D3557 0px 1px 4px;
+}
+
+/* Language Badges */
+.badge-cpp { background-color: #00599C; color: white; }
+.badge-csharp { background-color: #68217A; color: white; }
+.badge-js { background-color: #F0DB4F; color: black; }
+.badge-lua { background-color: #000080; color: white; }
+.badge-python { background-color: #306998; color: white; }
+.badge-html { background-color: #E34C26; color: white; }
+.badge-css { background-color: #264de4; color: white; }
+.badge-php { background-color: #777BB4; color: white; }
+.badge-java { background-color: #007396; color: white; }
+
+/* Engine/Tool Badges */
+.badge-wwise { background-color: #009fd9; color: white; }
+.badge-unity { background-color: #222c37; color: white; }
+.badge-unreal { background-color: #0e1128; color: white; }
+.badge-opengl { background-color: #5586A4; color: white; }
+.badge-glfw { background-color: orangered; color: white; }
+.badge-premake { background-color: #f05033; color: white; }
+.badge-entt { background-color: #4CAF50; color: white; }
+.badge-android-studio { background-color: #2ec170; color: white; }
+.badge-django { background-color: #092E20; color: white; }
+.badge-git { background-color: #F1502F; color: white; }
+.badge-nextjs { background-color: #000000; color: white; }

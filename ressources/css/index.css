@@ -223,6 +223,11 @@ em {
     justify-content: flex-start;
 }
 
+.project-inner .badge-container .badge {
+    margin: 0;
+    padding: 0.2em 0.4em;
+}
+
 .project * {
     margin: 0.5em;
 }
@@ -277,6 +282,51 @@ em {
 
 .no-decoration {
     text-decoration: none;
+}
+
+#experiences {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1D3557;
+    color: #F1FAEE;
+    width: 100%;
+    padding-bottom: 2em;
+}
+
+.experience-badges {
+    display: flex;
+    gap: 2em
+}
+
+.experience-card {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background-color: #F1FAEE;
+    padding: 1.5em;
+    color: #1D3557;
+    border-radius: 15px;
+    border: 2px solid #1D3557;
+    margin-top: 1.5em;
+    line-height: 0.8em;
+}
+
+.experience-header, .experience-content {
+    width: 100%;
+}
+
+.experience-card:hover {
+    transform: scale(1.02);
+    background-color: #e1f0f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.experience-card img {
+    height: 5vh;
+    margin-right: 1em;
+    margin-top: 0.5em;
+    align-self: flex-start;
 }
 
 #history {
