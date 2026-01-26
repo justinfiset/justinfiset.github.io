@@ -1,15 +1,16 @@
 let $grid;
 
 $(document).ready(function() {
-    $grid = $('.masonry');
-    $grid.imagesLoaded().done(function() {
-        $grid.masonry({
-            itemSelector: ".masonry-item",
-            columnWidth: ".masonry-item",
-            percentPosition: true,
-            horizontalOrder: true,
-            gutter: 10
-        });
+    $grid = $('.masonry').masonry({
+        itemSelector: ".masonry-item",
+        columnWidth: ".masonry-item",
+        percentPosition: true,
+        horizontalOrder: true,
+        gutter: 10
+    });
+
+    $grid.imagesLoaded().progress(function() {
+        $grid.masonry('layout');
     });
 
     onResize(); 
