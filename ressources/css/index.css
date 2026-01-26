@@ -96,6 +96,20 @@ nav {
     list-style: none;
     margin: 0;
     padding: 1em 2em 1em 2em;
+
+    overflow: hidden;
+    max-height: 500px;
+    transition: 100ms ease-out;
+    opacity: 1;
+    display: flex;
+}
+
+#navbar.navbar-hidden {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    pointer-events: none;
 }
 
 #navbar li {
@@ -254,13 +268,17 @@ em {
     border-radius: 5px;
 }
 
+#navbar-mobile {
+    display: none;
+}
+
 #navbar-toggle {
     height: fit-content;
     width: 100%;
     justify-content: flex-end;
     padding: 0.25em 0 0.25em 0;
     height: 3rem;
-    display: none;
+    display: flex;
 }
 
 #navbar-toggle * {
@@ -305,11 +323,12 @@ em {
     display: flex;
     flex-direction: column;
     width: auto;
+    max-width: 80%;
     background-color: #F1FAEE;
     padding: 1.5em;
     color: #1D3557;
     border-radius: 15px;
-    border: 2px solid #1D3557;
+    border: 2px solid #457B9D;
     margin-top: 1.5em;
     line-height: 0.8em;
 }
@@ -403,10 +422,6 @@ em {
     display: flex;
 }
 
-.hidden {
-    display: none;
-}
-
 a {
     color: inherit;
     text-decoration: none;
@@ -488,8 +503,9 @@ a {
         width: 90%;
     }
 
-    #navbar-toggle {
+    #navbar-mobile {
         display: flex;
+        align-items: center;
     }
 
     .history-card {

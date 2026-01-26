@@ -22,19 +22,19 @@ function onResize() {
     $grid.masonry('layout');
 
     if ($(window).width() < 1200) {
-        $("#navbar").addClass("hidden");
+        $("#navbar").addClass("navbar-hidden");
     } else {
-        $("#navbar").removeClass("hidden");
+        $("#navbar").removeClass("navbar-hidden");
     }
 }
 
 $("#navbar-toggle").on("click", function() {
-    $("#navbar").toggleClass("hidden");
+    $("#navbar").toggleClass("navbar-hidden");
 });
 
 $(".nav-button").on("click", function () {
     if ($(window).width() < 1200) {
-        $("#navbar").addClass("hidden");
+        $("#navbar").addClass("navbar-hidden");
     }
 });
 
