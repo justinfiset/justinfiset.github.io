@@ -194,7 +194,7 @@ em {
 }
 
 #projects {
-    background-color: #A8DADC;
+    background-color: #B8CEDC;
     color: #1D3557;
     padding-bottom: 2em;
     width: 100%;
@@ -202,7 +202,6 @@ em {
     display: flex;
     flex-direction: column;
     align-items: center;
-    ;
 }
 
 #projects h2 {
@@ -458,11 +457,11 @@ a {
 }
 
 .separator-medium {
-    background-color: #457B9D;
+    background-color: #1D3557;
 }
 
 .separator-dark {
-    background-color: #1D3557;
+    background-color: #0B132B;
 }
 
 @media (max-width: 1200px) {
